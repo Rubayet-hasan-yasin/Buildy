@@ -1,0 +1,11 @@
+@import url('https://fonts.cdnfonts.com/css/euclid-circular-b');
+
+
+/* font-family: 'Euclid Circular B', sans-serif; */
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Euclid Circular B', sans-serif;
+}
+
