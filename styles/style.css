@@ -312,6 +312,96 @@ construction company
     height: 100px;
     background-color: #ffffff;
     position: absolute;
+    bottom: 0px;
+    right: 0;
+}
+
+
+
+/* Our working Projects 
+--------------------------------*/
+
+.projects-top-container{
+    color: white;
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects-top-container h3{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.projects-top-container p{
+    font-size: 100px;
+    color: #ca4903;
+    font-weight: 700;
+}
+.projects-top-container p span{
+    font-size: 13px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #b4b4b4;
+    margin-right: -10px;
+}
+
+
+/* project card section / */
+
+.project-card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.project-card{
+    position: relative;
+}
+
+.project-card img{
+    width: 100%;
+}
+.project-card::before{
+    content: '';
+    width: 60px;
+    height: 60px;
+    background-color: #ca4903;
+    position: absolute;
     bottom: 0;
     right: 0;
+    z-index: 10;
+}
+
+.project-card:nth-of-type(odd):before{
+    bottom: 4px;
+}
+
+.project-card:nth-of-type(1)::before{
+    left: 0;
+}
+
+
+.project-card-content{
+    backdrop-filter: blur(10px);
+    position: absolute;
+    padding: 23px 25px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    color: #ffffff;
+}
+
+.project-card-content h6{
+    font-size: 12px;
+    font-weight: 400;
+    
+}
+.project-card-content p{
+    font-size: 20px;
+    font-weight: 400;
+    
 }
