@@ -248,3 +248,70 @@ Develop Your Site section
     font-size: 40px;
     width: 350px;
 }
+
+
+
+/*------------------------- 
+construction company 
+---------------------------*/
+
+.construction-container{
+    display: flex;
+    width: 90%;
+    margin: 150px auto;
+    max-width: 1400px;
+}
+
+.construction-text-area{
+    width: 60%;
+}
+
+.construction-text-area h3{
+    font-size: 50px;
+    font-weight: 500;
+}
+.construction-text-area hr{
+    border: 1px solid rgba(0, 0, 0, 0.054);
+}
+
+.construction-text-area p{
+    font-size: 18px;
+    margin: 22px 0;
+    color: #171818;
+}
+.construction-text-area p:nth-of-type(2){
+    font-weight: 500;
+}
+
+.construction-text-area p span{
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    padding: 8px 8px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.construction-image{
+    margin-left: auto;
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+}
+
+.construction-image::after{
+    content: ' ';
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.construction-image::before{
+    content: ' ';
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
