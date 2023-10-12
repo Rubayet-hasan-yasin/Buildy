@@ -3,20 +3,29 @@
 
 /* font-family: 'Euclid Circular B', sans-serif; */
 
-*{
+* {
     padding: 0px;
     margin: 0px;
     font-family: 'Euclid Circular B', sans-serif;
 }
 
-header{
- width: 100%;
- max-width: 1536px;
- padding: 15px 0;
- margin: 0 auto;
+/* body{
+    max-width: 1400px;
+    margin: 0 auto;
+} */
+
+/* ---------------------
+navbar section
+------------------------*/
+
+header {
+    width: 100%;
+    padding: 15px 0;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,23 +34,118 @@ nav{
 
 }
 
-.navbar-list{
+.navbar-list {
     display: flex;
-    gap: 10px;
+    gap: 3vw;
     list-style-type: none;
-}
-
-.navbar-item{
     
 }
 
-.navbar-link{
+/* .navbar-item{
+    
+} */
+
+.navbar-link {
     text-decoration: none;
     display: flex;
     flex-direction: column;
+    gap: 0px;
     align-items: end;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
 }
 
-.navbar-num{
+.navbar-num {
     font-size: 12px;
+    color: rgb(109, 109, 109);
+    margin-bottom: -4px;
+}
+
+
+/* ---------------------
+navbar section end
+------------------------*/
+
+
+/* ---------------------
+Banner section
+------------------------*/
+
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: white;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 5%;
+    height: 620px;
+    width: 100%;
+}
+
+
+.banner-content{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+.banner-title{
+    font-size: 3.5vw;  /*TODO: responsive*/
+    font-weight: 500;
+    
+}
+
+.banner-subtitle{
+    color: rgb(160, 160, 160);
+    margin: 20px 0;
+    margin-bottom: 30px;
+}
+
+
+.btn{
+    background-color: #FF5C01;
+    border: none;
+    padding: 8px 18px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #ca4903;
+}
+
+
+/* :right part / */
+
+.image-container{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+.image-container img{
+    /* width: 425px; */
+    height: 440px;
+}
+
+.banner-image{  
+    border: #ffffff18 solid 1px;
+    width: 70%;
+    height: 85%;
+    margin-right: -155px;
+    z-index: 10;
+    position: relative;
+}
+.banner-image .bulding-image{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
 }
