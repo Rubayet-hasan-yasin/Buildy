@@ -126,7 +126,6 @@ Banner section
     height: 100%;
     width: 100%;
     overflow: hidden;
-    border: 1px solid red;
 }
 
 .image-container img {
@@ -222,3 +221,30 @@ Our Services section end
 /* ---------------------
 Develop Your Site section
 ------------------------*/
+
+
+.developer{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.developer-img-text{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+/* .developer-img-text img{
+
+} */
+
+.developer-img-text p{
+    color: white;
+    font-size: 40px;
+    width: 350px;
+}
