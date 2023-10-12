@@ -38,7 +38,7 @@ nav {
     display: flex;
     gap: 3vw;
     list-style-type: none;
-    
+
 }
 
 /* .navbar-item{
@@ -72,7 +72,7 @@ navbar section end
 Banner section
 ------------------------*/
 
-.banner{
+.banner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     color: white;
@@ -85,25 +85,26 @@ Banner section
 }
 
 
-.banner-content{
+.banner-content {
     width: 100%;
     /* border: 1px solid red; */
 }
 
-.banner-title{
-    font-size: 3.5vw;  /*TODO: responsive*/
+.banner-title {
+    font-size: 3.5vw;
+    /*TODO: responsive*/
     font-weight: 500;
-    
+
 }
 
-.banner-subtitle{
+.banner-subtitle {
     color: rgb(160, 160, 160);
     margin: 20px 0;
     margin-bottom: 30px;
 }
 
 
-.btn{
+.btn {
     background-color: #FF5C01;
     border: none;
     padding: 8px 18px;
@@ -111,14 +112,14 @@ Banner section
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #ca4903;
 }
 
 
 /* :right part / */
 
-.image-container{
+.image-container {
     display: flex;
     align-items: end;
     justify-content: end;
@@ -128,12 +129,12 @@ Banner section
     border: 1px solid red;
 }
 
-.image-container img{
+.image-container img {
     /* width: 425px; */
     height: 440px;
 }
 
-.banner-image{  
+.banner-image {
     border: #ffffff18 solid 1px;
     width: 70%;
     height: 85%;
@@ -141,7 +142,8 @@ Banner section
     z-index: 10;
     position: relative;
 }
-.banner-image .bulding-image{
+
+.banner-image .bulding-image {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -149,3 +151,74 @@ Banner section
     height: 100%;
     /* object-fit: contain; */
 }
+
+
+/* ---------------------
+Our Services section
+------------------------*/
+
+
+.services-title {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services-title h3 {
+    font-size: 50px;
+    font-weight: 600;
+
+}
+
+.services-title p {
+    width: 500px;
+    color: #666666;
+    margin: 0 auto;
+}
+
+
+/* card  */
+.card-container {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.card {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 5px 5px 35px #f8decfc0;
+}
+
+.card p {
+    font-size: 18px;
+    font-weight: 600;
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+
+.cercle {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.card:hover .cercle{
+    scale: 1.5;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+/* ---------------------
+Our Services section end
+------------------------*/
+
+/* ---------------------
+Develop Your Site section
+------------------------*/
