@@ -91,7 +91,9 @@ Banner section
 }
 
 .banner-title {
-    font-size: 3.5vw;
+    /* font-size: 3.5vw; */
+    font-size: clamp(10px, 3.5vw, 74px);
+    ;
     /*TODO: responsive*/
     font-weight: 500;
 
@@ -170,6 +172,7 @@ Our Services section
 
 .services-title p {
     width: 500px;
+    max-width: 100vw;
     color: #666666;
     margin: 0 auto;
 }
@@ -208,7 +211,7 @@ Our Services section
     border-radius: 50%;
 }
 
-.card:hover .cercle{
+.card:hover .cercle {
     scale: 1.5;
     transition: all;
     transition-duration: 300ms;
@@ -223,7 +226,7 @@ Develop Your Site section
 ------------------------*/
 
 
-.developer{
+.developer {
     width: 90%;
     max-width: 1400px;
     margin: 0 auto;
@@ -233,19 +236,19 @@ Develop Your Site section
     padding: 80px 0;
 }
 
-.developer-img-text{
+.developer-img-text {
     display: flex;
     gap: 50px;
     align-items: center;
 }
 
 /* .developer-img-text img{
-
+width: 100%;
 } */
 
-.developer-img-text p{
+.developer-img-text p {
     color: white;
-    font-size: 40px;
+    font-size: clamp(10px, 3.5vw, 40px);
     width: 350px;
 }
 
@@ -255,58 +258,61 @@ Develop Your Site section
 construction company 
 ---------------------------*/
 
-.construction-container{
+.construction-container {
     display: flex;
     width: 90%;
     margin: 150px auto;
     max-width: 1400px;
 }
 
-.construction-text-area{
+.construction-text-area {
     width: 60%;
 }
 
-.construction-text-area h3{
+.construction-text-area h3 pre{
     font-size: 50px;
     font-weight: 500;
 }
-.construction-text-area hr{
+
+.construction-text-area hr {
     border: 1px solid rgba(0, 0, 0, 0.054);
 }
 
-.construction-text-area p{
+.construction-text-area p {
     font-size: 18px;
     margin: 22px 0;
     color: #171818;
 }
-.construction-text-area p:nth-of-type(2){
+
+.construction-text-area p:nth-of-type(2) {
     font-weight: 500;
 }
 
-.construction-text-area p span{
+.construction-text-area p span {
     border: 1px solid rgba(0, 0, 0, 0.103);
     padding: 8px 8px;
     border-radius: 50%;
     background-color: white;
 }
 
-.construction-image{
+.construction-image {
     margin-left: auto;
     position: relative;
     overflow: hidden;
     width: 40%;
 }
 
-.construction-image::after{
+.construction-image::after {
     content: ' ';
     width: 100px;
     height: 100px;
     background-color: #ffffff;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
 }
-.construction-image::before{
+
+.construction-image::before {
     content: ' ';
     width: 100px;
     height: 100px;
@@ -321,7 +327,7 @@ construction company
 /* Our working Projects 
 --------------------------------*/
 
-.projects-top-container{
+.projects-top-container {
     color: white;
     max-width: 1400px;
     width: 90%;
@@ -330,17 +336,18 @@ construction company
     justify-content: space-between;
 }
 
-.projects-top-container h3{
+.projects-top-container h3 {
     font-size: 50px;
     font-weight: 500;
 }
 
-.projects-top-container p{
+.projects-top-container p {
     font-size: 100px;
     color: #ca4903;
     font-weight: 700;
 }
-.projects-top-container p span{
+
+.projects-top-container p span {
     font-size: 13px;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -351,21 +358,22 @@ construction company
 
 /* project card section / */
 
-.project-card-container{
+.project-card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
     margin: 40px 0;
 }
 
-.project-card{
+.project-card {
     position: relative;
 }
 
-.project-card img{
+.project-card img {
     width: 100%;
 }
-.project-card::before{
+
+.project-card::before {
     content: '';
     width: 60px;
     height: 60px;
@@ -376,16 +384,16 @@ construction company
     z-index: 10;
 }
 
-.project-card:nth-of-type(odd):before{
+.project-card:nth-of-type(odd):before {
     bottom: 4px;
 }
 
-.project-card:nth-of-type(1)::before{
+.project-card:nth-of-type(1)::before {
     left: 0;
 }
 
 
-.project-card-content{
+.project-card-content {
     backdrop-filter: blur(10px);
     position: absolute;
     padding: 23px 25px;
@@ -395,15 +403,16 @@ construction company
     color: #ffffff;
 }
 
-.project-card-content h6{
+.project-card-content h6 {
     font-size: 12px;
     font-weight: 400;
-    
+
 }
-.project-card-content p{
+
+.project-card-content p {
     font-size: 20px;
     font-weight: 400;
-    
+
 }
 
 
@@ -411,13 +420,13 @@ construction company
 /* Team Member 
 -------------------- */
 
-.member-container{
+.member-container {
     width: 90%;
     margin: 0 auto;
     padding: 100px 0;
 }
 
-.member-container h2{
+.member-container h2 {
     width: 450px;
     text-align: center;
     margin: 0 auto;
@@ -426,31 +435,33 @@ construction company
 }
 
 
-.member-card-container{
+.member-card-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
-.member-card{
+.member-card {
     width: 100%;
 }
 
-.member-card img{
+.member-card img {
     width: 100%;
 }
-.member-card h3{
-   font-size: 18px;
-   font-weight: 500;
-   margin-top: 12px;
+
+.member-card h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 12px;
 }
-.member-card p{
+
+.member-card p {
     font-size: 12px;
     margin-top: 2px;
 }
 
 
-.member-content-card{
+.member-content-card {
     grid-column: 3/5;
     display: flex;
     flex-direction: column;
@@ -460,14 +471,14 @@ construction company
     height: 380px;
 }
 
-.member-content-card .btn{
+.member-content-card .btn {
     margin-left: auto;
     padding: 15px 25px;
     font-size: 14px;
 }
 
 
-.content{
+.content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -476,13 +487,13 @@ construction company
     height: 100%;
 }
 
-.content .title{
+.content .title {
     font-size: 26px;
     width: 310px;
     text-align: center;
 }
 
-.content .member-number{
+.content .member-number {
     font-size: 120px;
     font-weight: 700;
     background-image: url(/images/members/bg-image.png);
@@ -499,13 +510,18 @@ construction company
 /* footer 
 -------------------- */
 
-footer{
+footer {
     background-color: #171818;
     color: #999999;
     height: 50vh;
+    min-height: 50vh;
 }
 
-.footer-content{
+.footer-container {
+    height: 100%;
+}
+
+.footer-content {
     width: 90%;
     height: 100%;
     max-width: 1400px;
@@ -515,11 +531,11 @@ footer{
     align-items: center;
 }
 
-.footer-content .about{
+.footer-content .about {
     max-width: 280px;
 }
 
-.footer-content .about p{
+.footer-content .about p {
     margin-top: 15px;
 }
 
@@ -528,17 +544,176 @@ footer{
     font-size: 14px;
 }
 
-.footer-item{
+.footer-item {
     margin: 8px 0;
 }
 
-.footer-item:nth-of-type(1){
+.footer-item:nth-of-type(1) {
     font-size: 18px;
     color: #ffffff;
     margin-bottom: 16px;
 }
 
-.information .footer-link{
+.information .footer-link {
     text-decoration: none;
     color: #999999;
+}
+
+
+
+
+/* Media query for tablets (768px wide) */
+@media (max-width: 768px) {
+    .navbar-list {
+        display: none;
+    }
+
+
+    /* banner  */
+    .banner {
+        grid-template-columns: repeat(1, 1fr);
+        height: 100%;
+        padding: 80px 10px 0 10px;
+    }
+
+    .banner-title {
+        font-size: 40px;
+    }
+
+
+
+    /* Our Services section  */
+    .services-title h3 {
+        font-size: 40px;
+    }
+
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+
+
+
+
+    /* footer  */
+    footer {
+        height: fit-content;
+        padding: 100px 0;
+    }
+
+    .footer-container {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 50px;
+        align-items: baseline;
+    }
+
+    /* Develop Your Site section */
+
+    .developer-img-text {
+        flex-direction: column-reverse;
+        /* align-items: start; */
+        text-align: center;
+
+    }
+
+    .developer-img-text img {
+        width: 100%;
+    }
+
+    .developer-img-text p {
+        font-size: 40px;
+        margin-top: 15px;
+    }
+
+
+    /* construction company  */
+    .construction-container {
+        display: block;
+    }
+
+    .construction-text-area {
+        width: 100%;
+    }
+
+    .construction-text-area h3 pre {
+        font-size: 5vw;
+    }
+
+    .construction-image {
+        width: 100%;
+    }
+
+    .construction-image img {
+        width: 100%;
+    }
+
+
+    /* Our working Projects 
+--------------------------------*/
+
+    .project-card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projects-top-container h3 {
+        font-size: 35px;
+    }
+
+    .projects-top-container p {
+        font-size: 80px;
+    }
+
+}
+
+
+/* Media query for mobile devices (576px) */
+@media (max-width: 576px) {
+
+    /* Our Services section  */
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Media query for desktop devices (576px) */
+/* @media (min-width:768px) and  (max-width: 1024px) { */
+@media (max-width: 1024px) {
+    .developer {
+        display: block;
+    }
+
+    .developer .btn {
+        margin-top: 30px;
+    }
+
+    /* construction company  */
+    .construction-text-area h3 {
+        font-size: 40px;
+    }
+
+    /* Our working Projects 
+--------------------------------*/
+
+.project-card-content{
+    padding: 15px 16px;
+}
+.project-card-content p {
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.project-card-content h6 {
+    font-size: 10px;
+    font-weight: 400;
+
+}
+
+
 }
