@@ -92,7 +92,7 @@ Banner section
 
 .banner-title {
     /* font-size: 3.5vw; */
-    font-size: clamp(10px, 3.5vw, 74px);
+    font-size: clamp(10px, 3.5vw, 70px);
     ;
     /*TODO: responsive*/
     font-weight: 500;
@@ -132,7 +132,8 @@ Banner section
 
 .image-container img {
     /* width: 425px; */
-    height: 440px;
+    /* height: 440px; */
+    height: 70%;
 }
 
 .banner-image {
@@ -269,7 +270,7 @@ construction company
     width: 60%;
 }
 
-.construction-text-area h3 pre{
+.construction-text-area h3 {
     font-size: 50px;
     font-weight: 500;
 }
@@ -422,6 +423,7 @@ construction company
 
 .member-container {
     width: 90%;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 100px 0;
 }
@@ -439,6 +441,7 @@ construction company
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    margin-top: 70px;
 }
 
 .member-card {
@@ -468,7 +471,7 @@ construction company
     align-items: center;
     justify-content: space-between;
     background-color: #F1F1F1;
-    height: 380px;
+    height: calc(100% - 55px);
 }
 
 .member-content-card .btn {
@@ -641,7 +644,7 @@ footer {
         width: 100%;
     }
 
-    .construction-text-area h3 pre {
+    .construction-text-area h3 {
         font-size: 5vw;
     }
 
@@ -666,7 +669,34 @@ footer {
     }
 
     .projects-top-container p {
-        font-size: 80px;
+        font-size: 70px;
+    }
+
+    .projects-top-container p span {
+        font-size: 10px;
+    }
+
+    /* Team Member 
+-------------------- */
+    .member-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .member-content-card .btn {
+        padding: 15px 25px;
+    }
+
+    .content .title {
+        font-size: 26px;
+    }
+
+    .content .member-number {
+        font-size: 120px;
+    }
+
+    .member-content-card {
+        grid-column: 1/3;
+        height: 400px;
     }
 
 }
@@ -675,10 +705,44 @@ footer {
 /* Media query for mobile devices (576px) */
 @media (max-width: 576px) {
 
+
     /* Our Services section  */
+
+    .projects-top-container h3 {
+        font-size: 30px;
+    }
+
+    .projects-top-container p {
+        font-size: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .projects-top-container p span {
+        font-size: 10px;
+        margin: 0;
+    }
+
     .card-container {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    /* Team Member 
+-------------------- */
+    .member-container h2 {
+        width: 100%;
+    }
+
+    /* .member-card-container {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+
+    .member-content-card {
+        height: 400px;
+    }
+
+
+
 }
 
 /* Media query for desktop devices (576px) */
@@ -700,20 +764,38 @@ footer {
     /* Our working Projects 
 --------------------------------*/
 
-.project-card-content{
-    padding: 15px 16px;
-}
-.project-card-content p {
-    font-size: 16px;
-    font-weight: 400;
+    .project-card-content {
+        padding: 15px 16px;
+    }
 
-}
+    .project-card-content p {
+        font-size: 16px;
+        font-weight: 400;
 
-.project-card-content h6 {
-    font-size: 10px;
-    font-weight: 400;
+    }
 
-}
+    .project-card-content h6 {
+        font-size: 10px;
+        font-weight: 400;
+
+    }
+
+
+    /* Team Member 
+-------------------- */
+
+    .member-content-card .btn {
+        padding: 8px 18px;
+    }
+
+    .content .title {
+        font-size: 20px;
+    }
+
+    .content .member-number {
+        font-size: 100px;
+    }
+
 
 
 }
